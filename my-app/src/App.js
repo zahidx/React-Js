@@ -1,24 +1,23 @@
 import './App.css';
-import logo from './logo.svg';
+import Hello from './component/hello';
+import Baby from './component/baby';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1>My First React App</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hello name="sakib" ></Hello>
+      {/* <Baby></Baby> */}
+      <Hello name="Sani" ></Hello>
+      <Hello name="Hamim" ></Hello>
+
+      <Baby name="class 1" > </Baby>
+      <Baby name="class 2" > </Baby>
+      <Baby name="class 3" > </Baby>
+
+
     </div>
   );
 }
